@@ -2,17 +2,21 @@
 
 Локальное управление стадом овец для macOS и Windows, мобильное приложение работника для Android.
 
-## Скачать версию 0.4.0
+## Скачать версию 0.4.1
 
 | Система | Установщик |
 | --- | --- |
-| Windows x64 | [Мастер установки EXE](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.0/Otara-Local-0.4.0-Windows-x64-Setup.exe) |
-| macOS 13+ Intel / Apple Silicon | [DMG](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.0/Otara-Local-0.4.0-macOS-universal.dmg) |
-| Android 8+ | [APK](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.0/Otara-Worker-0.4.0-Android.apk) |
+| Windows x64 | [Мастер установки EXE](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.1/Otara-Local-0.4.1-Windows-x64-Setup.exe) |
+| macOS 13+ Intel / Apple Silicon | [DMG](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.1/Otara-Local-0.4.1-macOS-universal.dmg) |
+| Android 8+ | [APK](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.1/Otara-Worker-0.4.1-Android.apk) |
 
-Ссылки доступны без входа в GitHub. [Последний выпуск](https://github.com/dcyril1982-ai/otara-local-downloads/releases/latest) · [Изменения и условия установки](https://github.com/dcyril1982-ai/otara-local-downloads/releases/tag/v0.4.0) · [SHA-256](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.0/SHA256SUMS.txt).
+Ссылки доступны без входа в GitHub. [Последний выпуск](https://github.com/dcyril1982-ai/otara-local-downloads/releases/latest) · [Изменения и условия установки](https://github.com/dcyril1982-ai/otara-local-downloads/releases/tag/v0.4.1) · [SHA-256](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.1/SHA256SUMS.txt).
 
-## Что добавлено
+## Исправлено в 0.4.1
+
+Файловые GET Яндекс.Диска поддерживают до двух проверенных HTTPS-перенаправлений без переноса OAuth-токена и Cookie. В журнале указаны операция, этап и HTTP-статус без подписанной ссылки и содержимого. «Саппорт» показывает причину непереданного обращения и необходимые настройки запуска доработки через Kimi.
+
+## Возможности
 
 - Раздел «Саппорт», отдельный сервис на центральном компьютере и персональное подключение телефонов. OpenAI GPT-6 Astra / max; резервный Kimi K3.1 Pro / max при недоступности OpenAI, включая доступ, баланс и лимиты.
 - «Версии ПО»: проверка совместимости, резервная копия базы, проверка размера и SHA-256 установщика перед ручной установкой.
@@ -31,4 +35,4 @@
 
 Исходники находятся в отдельном приватном репозитории. Автоматические ссылки GitHub «Source code» на странице этого репозитория содержат его служебные файлы, а не исходники приложения.
 
-Сборка 0.4.0: исходный commit `85524581aceb570dc7889a04ffd3553c52fc3a6d`; 210 Node-тестов, 176 проверок Android без сети, нативные проверки Windows/macOS.
+Сборка 0.4.1: исходный commit `b7c85007f2defa97a59e9d78749df8d437871ca4`; 222 Node-теста, 205 проверок Android без сети, нативные проверки Windows/macOS.
