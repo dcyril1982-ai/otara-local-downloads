@@ -2,17 +2,21 @@
 
 Локальное управление стадом овец для macOS и Windows, мобильное приложение работника для Android.
 
-## Скачать версию 0.4.2
+## Скачать версию 0.4.3
 
 | Система | Установщик |
 | --- | --- |
-| Windows x64 | [Мастер установки EXE](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.2/Otara-Local-0.4.2-Windows-x64-Setup.exe) |
-| macOS 13+ Intel / Apple Silicon | [DMG](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.2/Otara-Local-0.4.2-macOS-universal.dmg) |
-| Android 8+ | [APK](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.2/Otara-Worker-0.4.2-Android.apk) |
+| Windows x64 | [Мастер установки EXE](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.3/Otara-Local-0.4.3-Windows-x64-Setup.exe) |
+| macOS 13+ Intel / Apple Silicon | [DMG](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.3/Otara-Local-0.4.3-macOS-universal.dmg) |
+| Android 8+ | [APK](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.3/Otara-Worker-0.4.3-Android.apk) |
 
-Ссылки доступны без входа в GitHub. [Последний выпуск](https://github.com/dcyril1982-ai/otara-local-downloads/releases/latest) · [Изменения и условия установки](https://github.com/dcyril1982-ai/otara-local-downloads/releases/tag/v0.4.2) · [SHA-256](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.2/SHA256SUMS.txt).
+Ссылки доступны без входа в GitHub. [Последний выпуск](https://github.com/dcyril1982-ai/otara-local-downloads/releases/latest) · [Изменения и условия установки](https://github.com/dcyril1982-ai/otara-local-downloads/releases/tag/v0.4.3) · [SHA-256](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.3/SHA256SUMS.txt).
 
-## Обновления с сохранением данных — 0.4.2
+## Автопередача Kimi в GitHub Actions — 0.4.3
+
+В «Саппорт» появилась панель «Kimi для GitHub Actions». Администратор может разрешить передачу сохраненного локального ключа и региона в `KIMI_API_KEY` и `KIMI_REGION` приватного репозитория проекта. Требуется GitHub-токен с правом Secrets: read and write; значения шифруются публичным ключом репозитория перед отправкой. Сервис передает их после включения и при запуске, повторяет неудачные попытки и показывает безопасную диагностику. Передача ключа сама по себе не запускает доработку или выпуск программы.
+
+## Обновления с сохранением данных
 
 Установка поверх прежней версии сохраняет стадо, пользователей, историю, настройки и секреты. Неполные хранилища ключей и TLS не заменяются автоматически новыми подключениями. Установщик Windows защищает каталог данных; форма сервиса читает сохраненные параметры перед редактированием. Android сохраняет очередь событий, токены и активированный профиль весов.
 
@@ -33,8 +37,8 @@
 
 Локальный учет работает без API-ключей и GitHub. Для онлайн-поддержки нужны ключи в настройках центрального компьютера и интернет. Сервис работает, пока открыто центральное приложение; вне локальной сети телефонам нужен VPN. Секреты хранятся в Keychain / DPAPI, в установщики не включены. Контекст поддержки — документация и код версии программы; доступа к личной переписке ChatGPT у сервиса нет.
 
-Для Яндекс.Диска требуется зарегистрированный OAuth redirect URI и вход владельца аккаунта. Автоматическая подготовка исправлений и выпуск требуют отдельных настроек GitHub Actions secrets. Изменения проходят проверку перед публикацией; лечение и кормление не меняются автоматически.
+Для Яндекс.Диска требуется зарегистрированный OAuth redirect URI и вход владельца аккаунта. Для подготовки исправлений настройте GitHub Actions secrets, для Kimi доступна указанная выше автопередача. Выпуск выполняется отдельно после проверки. Изменения проходят проверку перед публикацией; лечение и кормление не меняются автоматически.
 
 Исходники находятся в отдельном приватном репозитории. Автоматические ссылки GitHub «Source code» на странице этого репозитория содержат его служебные файлы, а не исходники приложения.
 
-Сборка 0.4.2: исходный commit `b1fa2178ba02d8ff0bf834fc4f865a7fa10d727d`; 225 тестов приложения, 108 проверок обновления macOS, реальная установка и повторная установка Windows, 52 проверки перехода Android со старой версии, 205 проверок Android без сети и 31 проверка сертификата.
+Сборка 0.4.3: исходный commit `7c8479c50f2459038eb87236d8098648fe5e8b21`; 259 тестов приложения, 108 проверок обновления macOS, реальная установка и повторная установка Windows, 52 проверки перехода Android со старой версии, 205 проверок Android без сети и 31 проверка сертификата.
