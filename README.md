@@ -2,19 +2,21 @@
 
 Локальное управление стадом овец для macOS и Windows, мобильное приложение работника для Android.
 
-## Скачать версию 0.4.1
+## Скачать версию 0.4.2
 
 | Система | Установщик |
 | --- | --- |
-| Windows x64 | [Мастер установки EXE](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.1/Otara-Local-0.4.1-Windows-x64-Setup.exe) |
-| macOS 13+ Intel / Apple Silicon | [DMG](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.1/Otara-Local-0.4.1-macOS-universal.dmg) |
-| Android 8+ | [APK](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.1/Otara-Worker-0.4.1-Android.apk) |
+| Windows x64 | [Мастер установки EXE](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.2/Otara-Local-0.4.2-Windows-x64-Setup.exe) |
+| macOS 13+ Intel / Apple Silicon | [DMG](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.2/Otara-Local-0.4.2-macOS-universal.dmg) |
+| Android 8+ | [APK](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.2/Otara-Worker-0.4.2-Android.apk) |
 
-Ссылки доступны без входа в GitHub. [Последний выпуск](https://github.com/dcyril1982-ai/otara-local-downloads/releases/latest) · [Изменения и условия установки](https://github.com/dcyril1982-ai/otara-local-downloads/releases/tag/v0.4.1) · [SHA-256](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.1/SHA256SUMS.txt).
+Ссылки доступны без входа в GitHub. [Последний выпуск](https://github.com/dcyril1982-ai/otara-local-downloads/releases/latest) · [Изменения и условия установки](https://github.com/dcyril1982-ai/otara-local-downloads/releases/tag/v0.4.2) · [SHA-256](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v0.4.2/SHA256SUMS.txt).
 
-## Исправлено в 0.4.1
+## Обновления с сохранением данных — 0.4.2
 
-Файловые GET Яндекс.Диска поддерживают до двух проверенных HTTPS-перенаправлений без переноса OAuth-токена и Cookie. В журнале указаны операция, этап и HTTP-статус без подписанной ссылки и содержимого. «Саппорт» показывает причину непереданного обращения и необходимые настройки запуска доработки через Kimi.
+Установка поверх прежней версии сохраняет стадо, пользователей, историю, настройки и секреты. Неполные хранилища ключей и TLS не заменяются автоматически новыми подключениями. Установщик Windows защищает каталог данных; форма сервиса читает сохраненные параметры перед редактированием. Android сохраняет очередь событий, токены и активированный профиль весов.
+
+Обновляйте на том же устройстве, под прежней учетной записью ОС и с прежним каталогом данных. Не удаляйте Android-приложение и не очищайте его данные. macOS может запросить доступ обновленной сборки к прежним ключам. Резервная копия базы не переносит системное хранилище секретов на другой компьютер.
 
 ## Возможности
 
@@ -35,4 +37,4 @@
 
 Исходники находятся в отдельном приватном репозитории. Автоматические ссылки GitHub «Source code» на странице этого репозитория содержат его служебные файлы, а не исходники приложения.
 
-Сборка 0.4.1: исходный commit `b7c85007f2defa97a59e9d78749df8d437871ca4`; 222 Node-теста, 205 проверок Android без сети, нативные проверки Windows/macOS.
+Сборка 0.4.2: исходный commit `b1fa2178ba02d8ff0bf834fc4f865a7fa10d727d`; 225 тестов приложения, 108 проверок обновления macOS, реальная установка и повторная установка Windows, 52 проверки перехода Android со старой версии, 205 проверок Android без сети и 31 проверка сертификата.
