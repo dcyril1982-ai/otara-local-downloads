@@ -2,20 +2,26 @@
 
 Локальная программа управления овцеводческим хозяйством для **macOS 13+ (Apple Silicon/Intel), Windows x64 и Android 8+**. Русский интерфейс; повседневный учет работает без интернета. Облачный обмен, государственные запросы и онлайн-поддержка требуют сети и настроенных доступов.
 
-## Скачать 1.1.0
+## Скачать 1.1.1
 
 | Платформа / назначение | Файл |
 | --- | --- |
-| Windows, мастер установки | [Otara-Local-1.1.0-Windows-x64-Setup.exe](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v1.1.0/Otara-Local-1.1.0-Windows-x64-Setup.exe) |
-| macOS, образ установщика | [Otara-Local-1.1.0-macOS-universal.dmg](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v1.1.0/Otara-Local-1.1.0-macOS-universal.dmg) |
-| macOS, приложение в архиве | [Otara-Local-1.1.0-macOS-universal.zip](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v1.1.0/Otara-Local-1.1.0-macOS-universal.zip) |
-| Android, приложение работника | [Otara-Worker-1.1.0-Android.apk](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v1.1.0/Otara-Worker-1.1.0-Android.apk) |
-| Манифест обновления и размеры | [otara-update.json](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v1.1.0/otara-update.json) |
-| Контрольные суммы SHA-256 | [SHA256SUMS.txt](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v1.1.0/SHA256SUMS.txt) |
+| Windows, мастер установки | [Otara-Local-1.1.1-Windows-x64-Setup.exe](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v1.1.1/Otara-Local-1.1.1-Windows-x64-Setup.exe) |
+| macOS, образ установщика | [Otara-Local-1.1.1-macOS-universal.dmg](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v1.1.1/Otara-Local-1.1.1-macOS-universal.dmg) |
+| macOS, приложение в архиве | [Otara-Local-1.1.1-macOS-universal.zip](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v1.1.1/Otara-Local-1.1.1-macOS-universal.zip) |
+| Android, приложение работника | [Otara-Worker-1.1.1-Android.apk](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v1.1.1/Otara-Worker-1.1.1-Android.apk) |
+| Манифест обновления и размеры | [otara-update.json](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v1.1.1/otara-update.json) |
+| Контрольные суммы SHA-256 | [SHA256SUMS.txt](https://github.com/dcyril1982-ai/otara-local-downloads/releases/download/v1.1.1/SHA256SUMS.txt) |
 
-[Описание выпуска 1.1.0](https://github.com/dcyril1982-ai/otara-local-downloads/releases/tag/v1.1.0) · [Последний опубликованный выпуск](https://github.com/dcyril1982-ai/otara-local-downloads/releases/latest)
+[Описание выпуска 1.1.1](https://github.com/dcyril1982-ai/otara-local-downloads/releases/tag/v1.1.1) · [Последний опубликованный выпуск](https://github.com/dcyril1982-ai/otara-local-downloads/releases/latest)
 
 ## Что нового
+
+В «Версиях ПО» доступна история всех 10 выпусков от 0.1.0 до 1.1.1 с краткими и полными описаниями, в том числе без интернета. Кнопка «Проверить выпуски» дополняет сведения из GitHub. Ранние локальные сборки отмечены отдельно.
+
+Администратор может подготовить возврат **1.1.1 → 1.1.0 на Windows и macOS**. Порядок: «Версии ПО» → «Проверить выпуски» → «Подготовить откат» → сохранить резервную копию → «Показать установщик». Программа проверяет совместимость пары, размер и SHA-256 файла и записывает подготовку в журнал. Закройте Отару и локальный сервис, затем установите предыдущую версию поверх текущей под той же учетной записью ОС, сохраняя каталог данных. Текущая база, пользователи, настройки и ключи продолжают использоваться; старый архив базы не восстанавливается. Установщик запускается вручную. Возможности 1.1.1 в предыдущем выпуске отсутствуют, а для доработок через Саппорт потребуется обновление. Понижение Android APK не выполняется.
+
+## Возможности предыдущего выпуска
 
 «Прогнозирование» сравнивает до 32 заданных сценариев: приплод, привесы, сохранность, товарные цели, ресурсы, кормовой и пастбищный бюджет, ремонт маток и баранов, происхождение и скрещивание, экономика. Неизвестные данные видны явно. Расчет одной кампании с одним будущим окотом не изменяет рабочие планы и не является гарантией результата.
 
@@ -35,6 +41,6 @@
 
 ## О файлах
 
-Ключи API и данные хозяйств в дистрибутивы не включены. Исходный проект приватный; этот репозиторий содержит публичные установщики. Исходная ревизия 1.1.0: `e92b0692a5caa1d6919848d9c7187d0e27fc7940`; она также указана в манифесте обновления.
+Ключи API и данные хозяйств в дистрибутивы не включены. Исходный проект приватный; этот репозиторий содержит публичные установщики. Исходная ревизия 1.1.1: `de56159c05c8093bdca5a86e92f993a48eba591c`; она также указана в манифесте обновления.
 
 Пилотные сборки: Windows без издательской Authenticode-подписи, macOS с ad-hoc подписью без Apple notarization. Android использует постоянный сертификат выпусков начиная с 0.4.0. Контрольные суммы позволяют проверить целостность файлов; они не заменяют подпись издателя или профильную проверку решений по стаду.
